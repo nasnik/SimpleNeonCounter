@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function plusOne(){
+            const currentCounter=Number(document.getElementsByTagName('h1')[0].innerText);
+            const newCounter = currentCounter +1
+            document.getElementsByTagName('h1')[0].innerHTML = newCounter;
+        }
+        function minusONe(){
+            const currentCounter=Number(document.getElementsByTagName('h1')[0].innerText);
+            const newCounter = currentCounter -1
+            document.getElementsByTagName('h1')[0].innerHTML = newCounter;
+        }
+
+    </script>
+    <button onclick="plusOne()" class="neon" id="plus">Plus One</button>
+    <h1 class = "neon">5</h1>
+    <button onclick="minusONe()" class="neon" id="minus">Minus One</button>
+</body>
+</html>
